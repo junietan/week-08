@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import json
+from helper_functions.utility import check_password 
 
 if not check_password():    
     st.stop()
