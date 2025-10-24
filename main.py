@@ -3,6 +3,7 @@ import streamlit as st
 import pandas as pd
 # from helper_functions import llm
 from logics.customer_query_handler import process_user_message
+from helper_functions.utility import check_password
 
 
 # region <--------- Streamlit App Configuration --------->
@@ -12,32 +13,34 @@ st.set_page_config(
 )
 # endregion <--------- Streamlit App Configuration --------->
 
-st.title("Streamlit App")
+def main():
+    if not check_password():
+        st.stop()  # stop rendering if password not entered / incorrect
 
-form = st.form(key="form")
-form.subheader("Prompt")
+    st.title("Protected Streamlit App")
+    st.write("You passed the password check — show app content here.")
 
-user_prompt = form.text_area("Enter your prompt here", height=200)
+    st.title("Streamlit App")
 
-if form.form_submit_button("Submit"):
-    
-    st.toast(f"User Input Submitted - {user_prompt}")
+    form = st.form(key="form")
+    form.subheader("Prompt")
 
-    st.divider()
+    user_prompt = form.text_area("Enter your prompt here", height=200)
 
-    response, course_details = process_user_message(user_prompt)
-    st.write(response)
+    if form.form_submit_button("Submit"):
+        
+        st.toast(f"User Input Submitted - {user_prompt}")
 
-    st.divider()
+        st.divider()
 
-    print(course_details)
-    df = pd.DataFrame(course_details)
-    df 
+        response, course_details = process_user_message(user_prompt)
+        st.write(response)
 
+        st.divider()
 
-import streamlit as st  
-from helper_functions.utility import check_password  
-    
-    # Check if the password is correct.  
-if not check_password():  
-        st.stop()
+        print(course_details)
+        df = pd.DataFrame(course_details)
+        df 
+
+if __name__ == "__main__":
+    main()
