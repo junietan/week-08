@@ -2,7 +2,7 @@
 import streamlit as st
 import pandas as pd
 # from helper_functions import llm
-from logics.customer_query_handler import process_user_message
+#from logics.customer_query_handler import process_user_message
 from helper_functions.utility import check_password
 
 
@@ -33,13 +33,13 @@ def main():
 
         st.divider()
 
-        response, course_details = process_user_message(user_prompt)
-        st.write(response)
+#        response, course_details = process_user_message(user_prompt)
+#        st.write(response)
 
         st.divider()
 
-        print(course_details)
-        df = pd.DataFrame(course_details)
+ #       print(course_details)
+ #       df = pd.DataFrame(course_details)
         df 
 
 if __name__ == "__main__":
