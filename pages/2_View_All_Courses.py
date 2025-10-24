@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import json
 
+if not check_password():    
+    st.stop()
 
 # Load the JSON file
 filepath = './data/courses-full.json'
