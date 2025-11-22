@@ -1,0 +1,52 @@
+[
+    {
+        "question": "Briefly explain the difference between Artificial Intelligence (AI) and Machine Learning (ML), and provide one real-world application for each.",
+        "answer": "AI is the broader concept of creating intelligent machines. ML is a subset of AI that enables systems to learn from data without explicit programming. AI application: Virtual assistants. ML application: Spam detection.",
+        "marks": 10
+    },
+    {
+        "question": "What is the primary function of the mitochondria in a eukaryotic cell?",
+        "answer": "To generate most of the cell's supply of adenosine triphosphate (ATP), used as a source of chemical energy.",
+        "marks": 10
+    },
+    {
+        "question": "Explain the concept of natural selection and provide a brief example.",
+        "answer": "Natural selection is the process whereby organisms better adapted to their environment tend to survive and produce more offspring. Example: In a population of giraffes, those with longer necks can reach more leaves, survive better, and pass on their longer-neck genes.",
+        "marks": 15
+    },
+    {
+        "question": "What is the chemical formula for sulfuric acid?",
+        "answer": "H2SO4",
+        "marks": 5
+    },
+    {
+        "question": "Describe the difference between a covalent bond and an ionic bond.",
+        "answer": "A covalent bond involves the sharing of electrons between atoms, while an ionic bond involves the transfer of electrons from one atom to another, creating charged ions that are attracted to each other.",
+        "marks": 10
+    },
+    {
+        "question": "What is the capital of Australia?",
+        "answer": "Canberra",
+        "marks": 5
+    },
+    {
+        "question": "Explain the greenhouse effect in simple terms.",
+        "answer": "The greenhouse effect is a natural process that warms the Earth's surface. When the Sun's energy reaches the Earth's atmosphere, some of it is reflected back to space and the rest is absorbed and re-radiated by greenhouse gases. This absorbed energy warms the atmosphere and the planet's surface.",
+        "marks": 15
+    },
+    {
+        "question": "What is the Pythagorean theorem?",
+        "answer": "In a right-angled triangle, the square of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the other two sides. Mathematically, a\u00b2 + b\u00b2 = c\u00b2.",
+        "marks": 10
+    },
+    {
+        "question": "Who wrote the play 'Romeo and Juliet'?",
+        "answer": "William Shakespeare",
+        "marks": 5
+    },
+    {
+        "question": "What is the process by which plants make their own food?",
+        "answer": "Photosynthesis",
+        "marks": 5
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "question": "According to the syllabus, what are the primary Python libraries covered in Week 2 for AIML tasks, and what is their general purpose?",
+        "answer": "NumPy for numerical operations, Pandas for data manipulation and analysis, and Matplotlib for data visualization.",
+        "marks": 20
+    },
+    {
+        "question": "Explain the core difference between Convolutional Neural Networks (CNNs) and Recurrent Neural Networks (RNNs) as presented in Weeks 8 and 9, respectively.",
+        "answer": "CNNs are primarily used for image recognition by processing spatial hierarchies, while RNNs are designed for sequence data, remembering past information.",
+        "marks": 20
+    },
+    {
+        "question": "In Week 6, what are the key metrics used for evaluating classification models, and what do precision and recall specifically measure?",
+        "answer": "Metrics include accuracy, precision, recall, F1 score, and ROC. Precision measures the proportion of true positives among predicted positives. Recall measures the proportion of true positives among actual positives.",
+        "marks": 20
+    },
+    {
+        "question": "What are the main topics covered under 'AI Ethics & Fairness' in Week 13, and why are they important for developing AIML solutions?",
+        "answer": "Topics include bias, transparency, and responsible AI. They are crucial to ensure AIML systems are fair, unbiased, and used ethically, preventing harm and promoting trust.",
+        "marks": 20
+    },
+    {
+        "question": "Describe the purpose of unsupervised learning techniques like K-means clustering and PCA as covered in Weeks 10 and 11.",
+        "answer": "K-means groups similar data points into clusters. PCA reduces the number of variables in a dataset while retaining most of the information, simplifying analysis.",
+        "marks": 20
+    }
+]

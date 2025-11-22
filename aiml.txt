@@ -1,0 +1,27 @@
+AIML Course Syllabus
+Duration: 15 weeks
+Hours per week: 4 (Total: 60 hours)
+Format: Lectures, hands-on labs, projects, and discussions
+
+Learning Outcomes
+By the end of this course, students will be able to:
+- Apply Python and ML libraries to real datasets
+- Build, train, and evaluate ML/DL models
+- Understand ethical implications of AI systems
+- Develop end-to-end AIML solutions for practical problems
+
+Week 1: Introduction to AI & ML – history, applications, basics
+Week 2: Python for AIML – NumPy, Pandas, Matplotlib
+Week 3: Data Preprocessing – missing data, normalization, feature engineering
+Week 4: Supervised Learning I – linear regression, logistic regression
+Week 5: Supervised Learning II – decision trees, random forests, SVM
+Week 6: Model Evaluation – accuracy, precision, recall, F1, ROC
+Week 7: Neural Networks Basics – perceptron, activation functions, backpropagation
+Week 8: Deep Learning I – CNNs for image recognition
+Week 9: Deep Learning II – RNNs, LSTMs for sequence data
+Week 10: Unsupervised Learning I – clustering (K-means, hierarchical)
+Week 11: Unsupervised Learning II – dimensionality reduction (PCA, t-SNE)
+Week 12: Reinforcement Learning – agents, environments, Q-learning
+Week 13: AI Ethics & Fairness – bias, transparency, responsible AI
+Week 14: AIML Applications – NLP, computer vision, recommender systems
+Week 15: Capstone Project & Review – real-world AIML application, presentations

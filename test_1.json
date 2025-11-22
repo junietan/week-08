@@ -1,0 +1,102 @@
+[
+    {
+        "question": "Briefly explain the difference between Artificial Intelligence (AI) and Machine Learning (ML).",
+        "answer": "AI is the broader concept of creating intelligent machines. ML is a subset of AI that enables systems to learn from data without explicit programming.",
+        "marks": 5
+    },
+    {
+        "question": "What is the primary function of the mitochondria in a eukaryotic cell?",
+        "answer": "To generate most of the cell's supply of adenosine triphosphate (ATP), used as a source of chemical energy.",
+        "marks": 5
+    },
+    {
+        "question": "In the context of computer science, what does 'API' stand for?",
+        "answer": "Application Programming Interface",
+        "marks": 3
+    },
+    {
+        "question": "What is the chemical symbol for gold?",
+        "answer": "Au",
+        "marks": 2
+    },
+    {
+        "question": "Who wrote the novel 'Pride and Prejudice'?",
+        "answer": "Jane Austen",
+        "marks": 4
+    },
+    {
+        "question": "What is the largest planet in our solar system?",
+        "answer": "Jupiter",
+        "marks": 3
+    },
+    {
+        "question": "What is the process by which plants make their own food using sunlight?",
+        "answer": "Photosynthesis",
+        "marks": 4
+    },
+    {
+        "question": "What is the capital city of Australia?",
+        "answer": "Canberra",
+        "marks": 3
+    },
+    {
+        "question": "What is the SI unit of force?",
+        "answer": "Newton",
+        "marks": 3
+    },
+    {
+        "question": "What is the main ingredient in traditional Japanese miso soup?",
+        "answer": "Miso paste",
+        "marks": 4
+    },
+    {
+        "question": "Which famous scientist developed the theory of relativity?",
+        "answer": "Albert Einstein",
+        "marks": 5
+    },
+    {
+        "question": "What is the process of a liquid turning into a gas called?",
+        "answer": "Evaporation",
+        "marks": 3
+    },
+    {
+        "question": "What is the highest mountain in the world?",
+        "answer": "Mount Everest",
+        "marks": 4
+    },
+    {
+        "question": "What is the primary gas that makes up Earth's atmosphere?",
+        "answer": "Nitrogen",
+        "marks": 3
+    },
+    {
+        "question": "What is the name of the largest ocean on Earth?",
+        "answer": "Pacific Ocean",
+        "marks": 3
+    },
+    {
+        "question": "Who painted the Mona Lisa?",
+        "answer": "Leonardo da Vinci",
+        "marks": 5
+    },
+    {
+        "question": "What is the chemical formula for water?",
+        "answer": "H2O",
+        "marks": 2
+    },
+    {
+        "question": "What is the process of a solid turning directly into a gas called?",
+        "answer": "Sublimation",
+        "marks": 4
+    },
+    {
+        "question": "What is the currency of Japan?",
+        "answer": "Japanese Yen",
+        "marks": 3
+    },
+    {
+        "question": "What is the name of the force that pulls objects towards the center of the Earth?",
+        "answer": "Gravity",
+        "marks": 4
+    }
+]

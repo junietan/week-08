@@ -1,0 +1,171 @@
+{
+    "student_name": "abcde",
+    "test_file": "test_1.json",
+    "date": "2025-11-22 23:25:16",
+    "total_marks": 72,
+    "earned_marks": 44.0,
+    "percentage": 61.11,
+    "status": "Pass",
+    "questions": [
+        {
+            "question": "Briefly explain the difference between Artificial Intelligence (AI) and Machine Learning (ML).",
+            "student_answer": "AI borader scope on computers similating thinking like humans while ML is subset where machines can learn from pastd ata",
+            "correct_answer": "AI is the broader concept of creating intelligent machines. ML is a subset of AI that enables systems to learn from data without explicit programming.",
+            "max_marks": 5,
+            "earned_marks": 4.0,
+            "ai_feedback": "Your answer correctly identifies AI as a broader concept and ML as a subset that learns from data. Minor improvements in phrasing and spelling would make it even stronger."
+        },
+        {
+            "question": "What is the primary function of the mitochondria in a eukaryotic cell?",
+            "student_answer": "dunio",
+            "correct_answer": "To generate most of the cell's supply of adenosine triphosphate (ATP), used as a source of chemical energy.",
+            "max_marks": 5,
+            "earned_marks": 0,
+            "ai_feedback": "The student's answer is not a recognized word and does not address the question in any way. Therefore, no marks can be awarded."
+        },
+        {
+            "question": "In the context of computer science, what does 'API' stand for?",
+            "student_answer": "applicati0on programing interface",
+            "correct_answer": "Application Programming Interface",
+            "max_marks": 3,
+            "earned_marks": 2.0,
+            "ai_feedback": "You correctly identified most of the words in the acronym. Remember to spell 'application' with a 'c' and 'programming' with a 'g' for full credit."
+        },
+        {
+            "question": "What is the chemical symbol for gold?",
+            "student_answer": "Au",
+            "correct_answer": "Au",
+            "max_marks": 2,
+            "earned_marks": 2.0,
+            "ai_feedback": "Excellent! You correctly identified the chemical symbol for gold as Au. Well done!"
+        },
+        {
+            "question": "Who wrote the novel 'Pride and Prejudice'?",
+            "student_answer": "jane austen",
+            "correct_answer": "Jane Austen",
+            "max_marks": 4,
+            "earned_marks": 4.0,
+            "ai_feedback": "Excellent! Your answer is perfectly correct and demonstrates a good understanding of the question."
+        },
+        {
+            "question": "What is the largest planet in our solar system?",
+            "student_answer": "jupiter",
+            "correct_answer": "Jupiter",
+            "max_marks": 3,
+            "earned_marks": 3.0,
+            "ai_feedback": "Excellent! Your answer is correct and demonstrates a good understanding of the solar system's planets. The capitalization is a minor stylistic point and doesn't detract from the accuracy of your response."
+        },
+        {
+            "question": "What is the process by which plants make their own food using sunlight?",
+            "student_answer": "photosunthesis",
+            "correct_answer": "Photosynthesis",
+            "max_marks": 4,
+            "earned_marks": 3.0,
+            "ai_feedback": "Your answer is very close and demonstrates an understanding of the concept. You correctly identified the core idea but made a minor spelling error."
+        },
+        {
+            "question": "What is the capital city of Australia?",
+            "student_answer": "canberra",
+            "correct_answer": "Canberra",
+            "max_marks": 3,
+            "earned_marks": 3.0,
+            "ai_feedback": "Excellent! Your answer is correct and demonstrates a good understanding of the question."
+        },
+        {
+            "question": "What is the SI unit of force?",
+            "student_answer": "newton",
+            "correct_answer": "Newton",
+            "max_marks": 3,
+            "earned_marks": 3.0,
+            "ai_feedback": "Your answer is correct! The SI unit of force is indeed the newton. Well done."
+        },
+        {
+            "question": "What is the main ingredient in traditional Japanese miso soup?",
+            "student_answer": "miso",
+            "correct_answer": "Miso paste",
+            "max_marks": 4,
+            "earned_marks": 3.0,
+            "ai_feedback": "Your answer is very close and identifies the core component. However, the expected answer is 'miso paste' as 'miso' alone can refer to the fermented soybean product in a broader sense, not specifically the paste used in soup."
+        },
+        {
+            "question": "Which famous scientist developed the theory of relativity?",
+            "student_answer": "eitsten",
+            "correct_answer": "Albert Einstein",
+            "max_marks": 5,
+            "earned_marks": 2.0,
+            "ai_feedback": "You've got some of the letters correct and the spelling is close, but it's not quite the full name. Keep practicing your spelling!"
+        },
+        {
+            "question": "What is the process of a liquid turning into a gas called?",
+            "student_answer": "evaporate",
+            "correct_answer": "Evaporation",
+            "max_marks": 3,
+            "earned_marks": 2.0,
+            "ai_feedback": "Your answer is very close and demonstrates understanding of the concept. However, the question asked for the *process*, which is a noun (evaporation), while you provided the verb form (evaporate)."
+        },
+        {
+            "question": "What is the highest mountain in the world?",
+            "student_answer": "everest",
+            "correct_answer": "Mount Everest",
+            "max_marks": 4,
+            "earned_marks": 3.0,
+            "ai_feedback": "Your answer correctly identifies Mount Everest. Adding 'Mount' would have made it a complete and perfect answer."
+        },
+        {
+            "question": "What is the primary gas that makes up Earth's atmosphere?",
+            "student_answer": "nitrogen",
+            "correct_answer": "Nitrogen",
+            "max_marks": 3,
+            "earned_marks": 3.0,
+            "ai_feedback": "Excellent! Your answer is correct and clearly states the primary gas in Earth's atmosphere."
+        },
+        {
+            "question": "What is the name of the largest ocean on Earth?",
+            "student_answer": "pacific",
+            "correct_answer": "Pacific Ocean",
+            "max_marks": 3,
+            "earned_marks": 2.0,
+            "ai_feedback": "Your answer correctly identifies the largest ocean. However, proper capitalization is expected for proper nouns like ocean names."
+        },
+        {
+            "question": "Who painted the Mona Lisa?",
+            "student_answer": "leonardo da vinci",
+            "correct_answer": "Leonardo da Vinci",
+            "max_marks": 5,
+            "earned_marks": 5.0,
+            "ai_feedback": "Excellent! You correctly identified Leonardo da Vinci as the painter of the Mona Lisa. Your answer is accurate and complete."
+        },
+        {
+            "question": "What is the chemical formula for water?",
+            "student_answer": "h2o",
+            "correct_answer": "H2O",
+            "max_marks": 2,
+            "earned_marks": 0,
+            "ai_feedback": "Grading error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-2.5-flash-lite\nPlease retry in 54.563703111s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash-lite\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 15\n}\n, retry_delay {\n  seconds: 54\n}\n]"
+        },
+        {
+            "question": "What is the process of a solid turning directly into a gas called?",
+            "student_answer": "?",
+            "correct_answer": "Sublimation",
+            "max_marks": 4,
+            "earned_marks": 0,
+            "ai_feedback": "Grading error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-2.5-flash-lite\nPlease retry in 54.530389582s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash-lite\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 15\n}\n, retry_delay {\n  seconds: 54\n}\n]"
+        },
+        {
+            "question": "What is the currency of Japan?",
+            "student_answer": "yen",
+            "correct_answer": "Japanese Yen",
+            "max_marks": 3,
+            "earned_marks": 0,
+            "ai_feedback": "Grading error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-2.5-flash-lite\nPlease retry in 54.493178214s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash-lite\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 15\n}\n, retry_delay {\n  seconds: 54\n}\n]"
+        },
+        {
+            "question": "What is the name of the force that pulls objects towards the center of the Earth?",
+            "student_answer": "gravity",
+            "correct_answer": "Gravity",
+            "max_marks": 4,
+            "earned_marks": 0,
+            "ai_feedback": "Grading error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-2.5-flash-lite\nPlease retry in 54.456322547s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash-lite\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 15\n}\n, retry_delay {\n  seconds: 54\n}\n]"
+        }
+    ]
+}
