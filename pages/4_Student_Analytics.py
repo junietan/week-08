@@ -4,10 +4,14 @@
 import streamlit as st
 import json
 import glob
+from pathlib import Path
+DATA_DIR = Path(__file__).resolve().parent.parent / "data"
+DATA_DIR.mkdir(exist_ok=True)
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 from datetime import datetime
+from helper_functions.utility import check_password
 
 # Page configuration
 st.set_page_config(
@@ -16,11 +20,15 @@ st.set_page_config(
     layout="wide"
 )
 
+# Password gate
+if not check_password():
+    st.stop()
+
 st.title("📊 Student Analytics Dashboard")
 st.markdown("Analyze student performance with interactive visualizations")
 
 # Load all result files
-result_files = glob.glob("result_*.json")
+result_files = glob.glob(str(DATA_DIR / "result_*.json"))
 
 if not result_files:
     st.warning("⚠️ No student results found. Students need to complete tests first.")
@@ -33,7 +41,8 @@ for file in result_files:
     try:
         with open(file, 'r', encoding='utf-8') as f:
             data = json.load(f)
-            data['filename'] = file
+            from pathlib import Path as _P
+            data['filename'] = _P(file).name
             all_results.append(data)
     except Exception as e:
         st.warning(f"⚠️ Could not load {file}: {e}")
@@ -345,16 +354,16 @@ with col1:
         }
         
         filename = f"analytics_report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
-        with open(filename, 'w', encoding='utf-8') as f:
+        with open(DATA_DIR / filename, 'w', encoding='utf-8') as f:
             json.dump(report_data, f, indent=4)
-        st.success(f"✅ Report saved to {filename}")
+        st.success(f"✅ Report saved to data/{filename}")
 
 with col2:
     if st.button("🗑️ Clear All Results", use_container_width=True, type="secondary"):
         if st.checkbox("⚠️ Confirm deletion of all result files"):
+            import os
             for file in result_files:
                 try:
-                    import os
                     os.remove(file)
                 except:
                     pass

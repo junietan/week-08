@@ -1,0 +1,51 @@
+{
+    "student_name": "Junie",
+    "test_file": "D:\\Junie\\AIBC\\week-08\\data\\test_2.json",
+    "date": "2025-11-23 05:23:53",
+    "total_marks": 100,
+    "earned_marks": 22.0,
+    "percentage": 22.0,
+    "status": "Fail",
+    "questions": [
+        {
+            "question": "According to the syllabus, what are the primary Python libraries covered in Week 2 for AIML tasks, and what is their general purpose?",
+            "student_answer": "numpy and pandas for EDA",
+            "correct_answer": "NumPy for numerical operations, Pandas for data manipulation and analysis, and Matplotlib for data visualization.",
+            "max_marks": 20,
+            "earned_marks": 10.0,
+            "ai_feedback": "You correctly identified NumPy and Pandas and their relevance to EDA. However, you missed Matplotlib and a more detailed explanation of each library's purpose."
+        },
+        {
+            "question": "Explain the core difference between Convolutional Neural Networks (CNNs) and Recurrent Neural Networks (RNNs) as presented in Weeks 8 and 9, respectively.",
+            "student_answer": "aaa",
+            "correct_answer": "CNNs are primarily used for image recognition by processing spatial hierarchies, while RNNs are designed for sequence data, remembering past information.",
+            "max_marks": 20,
+            "earned_marks": 0,
+            "ai_feedback": "The student's answer is empty and does not address the question at all. Therefore, no marks can be awarded."
+        },
+        {
+            "question": "In Week 6, what are the key metrics used for evaluating classification models, and what do precision and recall specifically measure?",
+            "student_answer": "accuracy",
+            "correct_answer": "Metrics include accuracy, precision, recall, F1 score, and ROC. Precision measures the proportion of true positives among predicted positives. Recall measures the proportion of true positives among actual positives.",
+            "max_marks": 20,
+            "earned_marks": 5.0,
+            "ai_feedback": "You correctly identified one key metric (accuracy). However, the question asked for multiple metrics and specific definitions of precision and recall, which were not provided."
+        },
+        {
+            "question": "What are the main topics covered under 'AI Ethics & Fairness' in Week 13, and why are they important for developing AIML solutions?",
+            "student_answer": "make sure ai dont take over the world",
+            "correct_answer": "Topics include bias, transparency, and responsible AI. They are crucial to ensure AIML systems are fair, unbiased, and used ethically, preventing harm and promoting trust.",
+            "max_marks": 20,
+            "earned_marks": 2.0,
+            "ai_feedback": "While your answer touches on a common concern related to AI, it doesn't directly address the specific topics of bias, transparency, and responsible AI as outlined in the question. It's important to focus on the core concepts discussed in the course material."
+        },
+        {
+            "question": "Describe the purpose of unsupervised learning techniques like K-means clustering and PCA as covered in Weeks 10 and 11.",
+            "student_answer": "find hidden patterns  in data",
+            "correct_answer": "K-means groups similar data points into clusters. PCA reduces the number of variables in a dataset while retaining most of the information, simplifying analysis.",
+            "max_marks": 20,
+            "earned_marks": 5.0,
+            "ai_feedback": "Your answer captures a very general purpose of unsupervised learning, but it lacks the specificity required to describe K-means and PCA.  It would be beneficial to mention the specific goals of clustering and dimensionality reduction."
+        }
+    ]
+}

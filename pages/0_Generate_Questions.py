@@ -4,70 +4,40 @@
 # Migrated from former root file `streamlit_syllabus_app.py` for consistency.
 
 import os
+from pathlib import Path
 os.environ['ORT_LOGGING_LEVEL'] = '3'
 os.environ['OMP_NUM_THREADS'] = '1'
+DATA_DIR = Path(__file__).resolve().parent.parent / "data"
+DATA_DIR.mkdir(exist_ok=True)
 
 import streamlit as st
 import glob
 import re
 import json
 import google.generativeai as genai
+from helper_functions.utility import check_password
 
 st.set_page_config(page_title="Generate AIML Test Questions", page_icon="🛠", layout="wide")
+
+# Password gate
+if not check_password():
+    st.stop()
 
 st.title("🛠 Generate AIML Test Questions")
 st.caption("Load syllabus, configure Gemini, and generate marked questions.")
 
 # Session state initialization
 for key, default in {
-    'gemini_initialized': False,
     'syllabus_loaded': False,
-    'show_raw_response': False,
 }.items():
     if key not in st.session_state:
         st.session_state[key] = default
 
-# Sidebar configuration
-with st.sidebar:
-    st.header("⚙️ Model & Syllabus Setup")
-    google_api_key = st.text_input("Google API Key", type="password", help="Enter your Google Gemini API key")
-
-    model_options = {
-        "gemini-2.5-flash-lite": "2.5 Flash Lite (lowest cost, newest)",
-        "gemini-2.0-flash-lite": "2.0 Flash Lite (very low cost)",
-        "gemini-2.0-flash-exp": "2.0 Flash Experimental (may vary)",
-    }
-    if 'selected_gemini_model' not in st.session_state:
-        st.session_state.selected_gemini_model = "gemini-2.5-flash-lite"
-
-    chosen = st.selectbox("Model", list(model_options.keys()), format_func=lambda k: model_options[k])
-    st.session_state.selected_gemini_model = chosen
-    st.caption("Prefer 2.5 / 2.0 flash-lite or 1.5 flash-8b for lower cost.")
-    st.session_state.show_raw_response = st.checkbox("Show raw response on errors", value=st.session_state.show_raw_response)
-
-    if st.button("Initialize / Update Gemini", use_container_width=True, disabled=not google_api_key):
-        try:
-            genai.configure(api_key=google_api_key)
-            try:
-                st.session_state.gemini_model = genai.GenerativeModel(chosen)
-                st.session_state.gemini_initialized = True
-                st.success(f"✅ Initialized model: {chosen}")
-            except Exception:
-                fallback = "gemini-1.5-flash-8b"
-                st.warning(f"⚠️ '{chosen}' unavailable. Falling back to {fallback}.")
-                st.session_state.gemini_model = genai.GenerativeModel(fallback)
-                st.session_state.gemini_initialized = True
-                st.success(f"✅ Initialized fallback model: {fallback}")
-        except Exception as e:
-            st.error(f"❌ Gemini configuration failed: {e}")
-
 # Syllabus loader
-def load_syllabus():
-    if 'syllabus_content' in st.session_state:
-        return True
+def load_syllabus_from_upload(uploaded_file):
+    """Load syllabus from uploaded file"""
     try:
-        with open('aiml.txt', 'r', encoding='utf-8') as f:
-            content = f.read()
+        content = uploaded_file.read().decode('utf-8')
         if not content.strip():
             st.error("❌ Syllabus file is empty.")
             return False
@@ -75,11 +45,9 @@ def load_syllabus():
         st.session_state.syllabus_loaded = True
         st.success(f"✅ Loaded syllabus ({len(content)} chars)")
         return True
-    except FileNotFoundError:
-        st.error("❌ 'aiml.txt' not found in workspace root.")
     except Exception as e:
         st.error(f"❌ Failed to load syllabus: {e}")
-    return False
+        return False
 
 # Prompt builder
 def build_prompt(syllabus: str, num_questions: int, total_marks: int) -> str:
@@ -181,8 +149,16 @@ def generate_questions(prompt: str, expected: int, total_marks: int, retries: in
 
 # UI: Syllabus Loader
 st.header("📥 Syllabus")
-if st.button("Load AIML Syllabus", use_container_width=True):
-    load_syllabus()
+uploaded_syllabus = st.file_uploader(
+    "Upload syllabus.txt file", 
+    type=['txt'], 
+    help="Upload a text file containing the AIML syllabus"
+)
+
+if uploaded_syllabus is not None:
+    if st.button("Load Uploaded Syllabus", use_container_width=True):
+        load_syllabus_from_upload(uploaded_syllabus)
+
 if st.session_state.get('syllabus_loaded'):
     with st.expander("Preview Syllabus", expanded=False):
         st.code(st.session_state.syllabus_content[:2000] + ('..."' if len(st.session_state.syllabus_content) > 2000 else ''), language='text')
@@ -209,17 +185,18 @@ if st.button("Generate Test", type="primary", use_container_width=True):
             data = generate_questions(prompt, expected=num_questions, total_marks=total_marks)
         if data:
             # Save file
-            existing = glob.glob("test_*.json")
+            existing = glob.glob(str(DATA_DIR / "test_*.json"))
             max_num = 0
             for fn in existing:
                 m = re.search(r'test_(\d+)\.json', fn)
                 if m:
                     max_num = max(max_num, int(m.group(1)))
             filename = f"test_{max_num+1}.json"
+            file_path = DATA_DIR / filename
             try:
-                with open(filename, 'w', encoding='utf-8') as f:
+                with open(file_path, 'w', encoding='utf-8') as f:
                     json.dump(data, f, indent=4)
-                st.success(f"✅ Saved test to {filename}")
+                st.success(f"✅ Saved test to data/{filename}")
             except Exception as e:
                 st.error(f"❌ Failed to save: {e}")
 
@@ -228,21 +205,24 @@ if st.button("Generate Test", type="primary", use_container_width=True):
                 with st.expander(f"Q{i} ({item.get('marks','?')} marks)"):
                     st.markdown(f"**Question:** {item.get('question','')}")
                     st.markdown(f"**Answer:** {item.get('answer','')}")
-            with open(filename, 'r', encoding='utf-8') as f:
+            with open(file_path, 'r', encoding='utf-8') as f:
                 st.download_button("📥 Download JSON", f.read(), file_name=filename, mime='application/json', use_container_width=True)
 
 st.divider()
 
 # Existing tests
 st.header("📂 Existing Test Files")
-files = sorted(glob.glob("test_*.json"))
+files = sorted(glob.glob(str(DATA_DIR / "test_*.json")))
 if files:
-    selected = st.selectbox("Select a file to preview", files)
+    # Show basenames for selection
+    display_map = {Path(f).name: f for f in files}
+    selected_name = st.selectbox("Select a file to preview", list(display_map.keys()))
+    selected = display_map[selected_name]
     if selected:
         try:
             with open(selected, 'r', encoding='utf-8') as f:
                 test_data = json.load(f)
-            st.markdown(f"**File:** `{selected}` | **Questions:** {len(test_data)}")
+            st.markdown(f"**File:** `data/{Path(selected).name}` | **Questions:** {len(test_data)}")
             for i, item in enumerate(test_data, 1):
                 with st.expander(f"Q{i} ({item.get('marks','?')} marks)"):
                     st.markdown(f"**Question:** {item.get('question','')}")

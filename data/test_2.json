@@ -36,7 +36,7 @@
     },
     {
         "question": "What is the Pythagorean theorem?",
-        "answer": "In a right-angled triangle, the square of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the other two sides. Mathematically, a\u00b2 + b\u00b2 = c\u00b2.",
+        "answer": "In a right-angled triangle, the square of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the other two sides. Mathematically, a² + b² = c².",
         "marks": 10
     },
     {

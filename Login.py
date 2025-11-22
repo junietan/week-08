@@ -3,13 +3,13 @@ from helper_functions.utility import check_password
 
 def main():
     # Configure page early
-    st.set_page_config(page_title="AIML Assessment Hub", layout="wide")
+    st.set_page_config(page_title="DSJB Assessment Hub", layout="wide")
 
     # Password gate
     if not check_password():
         st.stop()
 
-    st.title("AIML Assessment Hub")
+    st.title("DSJB Assessment Hub")
     st.write("Welcome. Use the sidebar to navigate the app pages:")
     st.markdown(
         """

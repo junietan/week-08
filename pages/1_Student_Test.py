@@ -4,8 +4,12 @@
 import streamlit as st
 import json
 import glob
+from pathlib import Path
+DATA_DIR = Path(__file__).resolve().parent.parent / "data"
+DATA_DIR.mkdir(exist_ok=True)
 from datetime import datetime
 import google.generativeai as genai
+from helper_functions.utility import check_password
 
 # Page configuration
 st.set_page_config(
@@ -13,6 +17,10 @@ st.set_page_config(
     page_icon="✏️",
     layout="wide"
 )
+
+# Password gate
+if not check_password():
+    st.stop()
 
 st.title("✏️ Student Test")
 st.markdown("Select a test, answer the questions, and see your score!")
@@ -48,14 +56,16 @@ st.divider()
 
 # Test selection
 st.header("📚 Select Test")
-test_files = glob.glob("test_*.json")
+test_files = glob.glob(str(DATA_DIR / "test_*.json"))
 
 if not test_files:
     st.warning("⚠️ No tests available. Please generate a test first from the main page.")
     st.stop()
 
 test_files.sort()
-selected_test = st.selectbox("Choose a test:", test_files, key="test_selector")
+display_map = {Path(f).name: f for f in test_files}
+selected_label = st.selectbox("Choose a test:", list(display_map.keys()), key="test_selector")
+selected_test = display_map[selected_label]
 
 # Load test button
 if st.button("Load Test", type="primary", use_container_width=True):
@@ -388,9 +398,10 @@ Output ONLY in this exact JSON format (no extra text):
                 filename = f"result_{st.session_state.student_name.replace(' ', '_')}_{timestamp}.json"
                 
                 try:
-                    with open(filename, 'w', encoding='utf-8') as f:
+                    file_path = DATA_DIR / filename
+                    with open(file_path, 'w', encoding='utf-8') as f:
                         json.dump(result_data, f, indent=4)
-                    st.success(f"✅ Results saved to {filename}")
+                    st.success(f"✅ Results saved to data/{filename}")
                 except Exception as e:
                     st.error(f"❌ Error saving results: {e}")
         
