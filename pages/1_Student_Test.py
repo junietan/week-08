@@ -154,7 +154,7 @@ if st.session_state.current_test:
         with col1:
             st.metric("Student Name", st.session_state.student_name)
         with col2:
-            st.metric("Test File", selected_test)
+            st.metric("Test File", Path(selected_test).name)
         
         st.divider()
         
@@ -369,7 +369,7 @@ Output ONLY in this exact JSON format (no extra text):
             if st.button("Save Results", use_container_width=True):
                 result_data = {
                     "student_name": st.session_state.student_name,
-                    "test_file": selected_test,
+                    "test_file": Path(selected_test).name,
                     "date": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
                     "total_marks": total_marks,
                     "earned_marks": st.session_state.total_earned,
