@@ -1,0 +1,171 @@
+{
+    "student_name": "junie",
+    "test_file": "D:\\Junie\\AIBC\\week-08\\data\\test_1.json",
+    "date": "2025-11-23 05:48:58",
+    "total_marks": 105,
+    "earned_marks": 41.0,
+    "percentage": 39.05,
+    "status": "Fail",
+    "questions": [
+        {
+            "question": "Define Artificial Intelligence (AI) and provide two everyday examples.",
+            "student_answer": "this application uses ai. asking LLM to help with coding and asking LLM for clarifications on topics",
+            "correct_answer": "AI is the simulation of human intelligence in machines. Examples include voice assistants like Siri and recommendation systems on streaming platforms.",
+            "max_marks": 5,
+            "earned_marks": 3.0,
+            "ai_feedback": "Your answer correctly identifies that LLMs use AI and provides relevant examples of their application. However, it doesn't explicitly define AI itself, which was a key part of the question."
+        },
+        {
+            "question": "What is the fundamental difference between AI, Machine Learning (ML), and Deep Learning?",
+            "student_answer": "aa",
+            "correct_answer": "AI is the broad concept of intelligent machines. ML is a subset of AI that learns from data. Deep Learning is a subset of ML using neural networks with many layers.",
+            "max_marks": 7,
+            "earned_marks": 0,
+            "ai_feedback": "The provided answer is empty and does not address the question at all. Therefore, no marks can be awarded."
+        },
+        {
+            "question": "List two ethical considerations related to AI development and deployment.",
+            "student_answer": "ensure ai dont take over the world!",
+            "correct_answer": "Two ethical considerations are bias in algorithms, which can lead to unfair outcomes, and privacy concerns regarding the collection and use of personal data.",
+            "max_marks": 5,
+            "earned_marks": 1.0,
+            "ai_feedback": "While the student's answer touches on a common concern about AI, it's not specific enough to be considered a direct ethical consideration in AI development and deployment. It lacks the precision and focus on issues like bias or privacy that were expected."
+        },
+        {
+            "question": "Distinguish between structured and unstructured data, providing an example of each.",
+            "student_answer": "excel files are structured and twitter feed is not. structured data fits into tables",
+            "correct_answer": "Structured data is organized and easily searchable (e.g., a spreadsheet of customer names and addresses). Unstructured data is not organized (e.g., an image or a free-form text document).",
+            "max_marks": 6,
+            "earned_marks": 4.0,
+            "ai_feedback": "Your answer correctly identifies examples of structured and unstructured data and touches on the tabular nature of structured data. Expanding on the definition of 'organized' and 'searchable' would have earned full marks."
+        },
+        {
+            "question": "Briefly explain the concept of algorithms in Machine Learning.",
+            "student_answer": "thinking process",
+            "correct_answer": "Algorithms in ML are sets of rules or instructions that a computer follows to learn from data, make predictions, or classify information without being explicitly programmed for every task.",
+            "max_marks": 5,
+            "earned_marks": 3.0,
+            "ai_feedback": "Your answer correctly identifies that algorithms are sets of instructions for computers to learn from data. However, it could be more precise by mentioning that this learning happens without explicit programming for every task."
+        },
+        {
+            "question": "What is the primary difference between supervised and unsupervised learning?",
+            "student_answer": "whether targets are labelled",
+            "correct_answer": "Supervised learning uses labeled data to train models to predict outcomes. Unsupervised learning uses unlabeled data to find patterns and structures within the data itself.",
+            "max_marks": 6,
+            "earned_marks": 3.0,
+            "ai_feedback": "Your answer correctly identifies a key distinguishing factor. However, it could be more complete by explaining what 'labeled' and 'unlabeled' data are used for in each type of learning."
+        },
+        {
+            "question": "Describe the goal of regression in Machine Learning.",
+            "student_answer": "predict a continuous variable",
+            "correct_answer": "Regression aims to predict a continuous numerical value. It models the relationship between independent variables and a dependent variable to forecast a specific number.",
+            "max_marks": 5,
+            "earned_marks": 3.0,
+            "ai_feedback": "Your answer correctly identifies that regression predicts a continuous variable. However, it could be more complete by mentioning the modeling of relationships between variables."
+        },
+        {
+            "question": "Provide a real-world example of binary classification.",
+            "student_answer": "whether customer will default on loan",
+            "correct_answer": "A common example is email spam detection, where the model classifies an email as either 'spam' or 'not spam' (ham).",
+            "max_marks": 5,
+            "earned_marks": 4.0,
+            "ai_feedback": "This is a good real-world example of binary classification. It clearly identifies two distinct outcomes. You could strengthen it by explicitly stating the two classes, like 'will default' and 'will not default'."
+        },
+        {
+            "question": "What are the basic building blocks of a neural network?",
+            "student_answer": "neural nodes",
+            "correct_answer": "The basic building blocks are neurons, which are interconnected processing units organized into layers (input, hidden, and output layers).",
+            "max_marks": 5,
+            "earned_marks": 2.0,
+            "ai_feedback": "Your answer correctly identifies the fundamental processing units. However, it lacks the crucial detail about how these units are organized into layers and interconnected."
+        },
+        {
+            "question": "What is the main purpose of Natural Language Processing (NLP)?",
+            "student_answer": "help ai understand human language",
+            "correct_answer": "NLP enables machines to understand, interpret, and generate human language. Its goal is to bridge the gap between human communication and computer comprehension.",
+            "max_marks": 5,
+            "earned_marks": 3.0,
+            "ai_feedback": "Your answer correctly identifies a core aspect of NLP: helping AI understand human language. It could be more complete by mentioning interpretation and generation, and the broader goal of bridging communication gaps."
+        },
+        {
+            "question": "Give one application of NLP.",
+            "student_answer": "translation and transcription",
+            "correct_answer": "An application of NLP is sentiment analysis, which determines the emotional tone (positive, negative, neutral) expressed in a piece of text.",
+            "max_marks": 4,
+            "earned_marks": 3.0,
+            "ai_feedback": "Your answer provides valid applications of NLP. While translation and transcription are correct, the expected answer focused on sentiment analysis as an example. Providing a brief description of one of your examples would have earned full marks."
+        },
+        {
+            "question": "Name two industries where AI is being applied and briefly state an example for each.",
+            "student_answer": "education = like this app!",
+            "correct_answer": "Healthcare: AI can assist in diagnosing diseases from medical images. Education: AI can personalize learning paths for students.",
+            "max_marks": 6,
+            "earned_marks": 2.0,
+            "ai_feedback": "You correctly identified 'education' as an industry where AI is applied. However, the example provided is too brief and lacks specific detail about how AI is used in educational apps."
+        },
+        {
+            "question": "Why is data visualization important in Machine Learning?",
+            "student_answer": "helps human easily process information",
+            "correct_answer": "Data visualization helps in understanding complex data patterns, communicating model results effectively, and identifying potential issues or insights that might be missed otherwise.",
+            "max_marks": 5,
+            "earned_marks": 2.0,
+            "ai_feedback": "Your answer touches on a key benefit of data visualization, which is making information easier for humans to understand. However, it lacks the specificity and depth required to fully address the importance in the context of Machine Learning."
+        },
+        {
+            "question": "What is the objective of a capstone project in an ML course?",
+            "student_answer": "surmise your udnerstanding of the course into a tangible output",
+            "correct_answer": "The capstone project allows students to apply learned concepts to a real-world problem, design a mini-project, present their findings, and reflect on their learning journey.",
+            "max_marks": 6,
+            "earned_marks": 3.0,
+            "ai_feedback": "Your answer captures the essence of synthesizing course knowledge into a practical outcome. However, it could be more comprehensive by mentioning the application to real-world problems and the presentation/reflection aspects."
+        },
+        {
+            "question": "Explain the concept of bias in AI.",
+            "student_answer": "data is skewed resulting in unbalanced results favouring one version",
+            "correct_answer": "Bias in AI refers to systematic errors or prejudices in an AI system's output, often stemming from biased training data or flawed algorithm design, leading to unfair or discriminatory results.",
+            "max_marks": 5,
+            "earned_marks": 3.0,
+            "ai_feedback": "Your answer correctly identifies that skewed data leads to unbalanced results. However, it could be more complete by mentioning the origin of bias (data or algorithm) and the consequence of unfairness or discrimination."
+        },
+        {
+            "question": "What does it mean for data to be 'cleaned' in the context of ML?",
+            "student_answer": "ready to feed as inputs to ml algo",
+            "correct_answer": "Data cleaning involves identifying and correcting or removing errors, inconsistencies, duplicates, and missing values from a dataset to ensure its accuracy and reliability for ML model training.",
+            "max_marks": 5,
+            "earned_marks": 2.0,
+            "ai_feedback": "Your answer captures the *purpose* of data cleaning (making data ready for ML algorithms), but it doesn't explain *what* data cleaning actually entails. It's missing the key steps like identifying and correcting errors, inconsistencies, duplicates, and missing values."
+        },
+        {
+            "question": "What is the difference between prediction and classification in ML?",
+            "student_answer": "prediction gives an output. classification gives parameters for defining class",
+            "correct_answer": "Prediction (regression) forecasts a continuous numerical value, while classification assigns data points to predefined categories or classes.",
+            "max_marks": 5,
+            "earned_marks": 0,
+            "ai_feedback": "Grading error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-2.5-flash-lite\nPlease retry in 10.834161287s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash-lite\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 15\n}\n, retry_delay {\n  seconds: 10\n}\n]"
+        },
+        {
+            "question": "What is a 'pre-trained model' in the context of image recognition?",
+            "student_answer": "already been fed many images",
+            "correct_answer": "A pre-trained model is a neural network that has already been trained on a large dataset for a specific task, like image recognition, and can be used or fine-tuned for new, similar tasks.",
+            "max_marks": 5,
+            "earned_marks": 0,
+            "ai_feedback": "Grading error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-2.5-flash-lite\nPlease retry in 10.801307011s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash-lite\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 15\n}\n, retry_delay {\n  seconds: 10\n}\n]"
+        },
+        {
+            "question": "What is sentiment analysis in NLP?",
+            "student_answer": "determine sentiment",
+            "correct_answer": "Sentiment analysis is the process of computationally identifying and categorizing opinions expressed in a piece of text, especially to determine whether the writer's attitude towards a particular topic, product, etc., is positive, negative, or neutral.",
+            "max_marks": 5,
+            "earned_marks": 0,
+            "ai_feedback": "Grading error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-2.5-flash-lite\nPlease retry in 10.769486857s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash-lite\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 15\n}\n, retry_delay {\n  seconds: 10\n}\n]"
+        },
+        {
+            "question": "What should a reflection on the future of AI include?",
+            "student_answer": "ethical and governance concerns",
+            "correct_answer": "A reflection on the future of AI should consider its potential advancements, societal impacts, ongoing ethical challenges, and the evolving role of humans alongside intelligent systems.",
+            "max_marks": 5,
+            "earned_marks": 0,
+            "ai_feedback": "Grading error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-2.5-flash-lite\nPlease retry in 10.721206263s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash-lite\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 15\n}\n, retry_delay {\n  seconds: 10\n}\n]"
+        }
+    ]
+}

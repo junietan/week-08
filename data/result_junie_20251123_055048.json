@@ -1,0 +1,27 @@
+{
+    "student_name": "junie",
+    "test_file": "D:\\Junie\\AIBC\\week-08\\data\\test_1.json",
+    "date": "2025-11-23 05:50:48",
+    "total_marks": 12,
+    "earned_marks": 8.0,
+    "percentage": 66.67,
+    "status": "Pass",
+    "questions": [
+        {
+            "question": "Define Artificial Intelligence (AI) and provide two everyday examples.",
+            "student_answer": "this application uses ai. asking LLM to help with coding and asking LLM for clarifications on topics",
+            "correct_answer": "AI is the simulation of human intelligence in machines. Examples include voice assistants like Siri and recommendation systems on streaming platforms.",
+            "max_marks": 5,
+            "earned_marks": 3.0,
+            "ai_feedback": "Your examples are relevant and demonstrate an understanding of AI's application, but the definition of AI itself is missing. You've correctly identified that LLMs are an example of AI."
+        },
+        {
+            "question": "Explain the concept of Machine Learning (ML) and differentiate it from traditional programming.",
+            "student_answer": "ML - give them inputs and outputs, machine determine process\ntraditional- give inputs and process, machinehelps determine output",
+            "correct_answer": "ML allows systems to learn from data without explicit programming. Traditional programming relies on predefined rules and instructions.",
+            "max_marks": 7,
+            "earned_marks": 5.0,
+            "ai_feedback": "Your answer correctly identifies the core difference: ML learns the process from data, while traditional programming defines the process. You could improve by explicitly mentioning 'data' as the learning source for ML."
+        }
+    ]
+}

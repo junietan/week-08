@@ -1,0 +1,12 @@
+[
+    {
+        "question": "Define Artificial Intelligence (AI) and provide two everyday examples.",
+        "answer": "AI is the simulation of human intelligence in machines. Examples include voice assistants like Siri and recommendation systems on streaming platforms.",
+        "marks": 5
+    },
+    {
+        "question": "Explain the concept of Machine Learning (ML) and its relationship to AI.",
+        "answer": "ML is a subset of AI that enables systems to learn from data without explicit programming. It allows AI to improve its performance over time.",
+        "marks": 7
+    }
+]

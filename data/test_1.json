@@ -1,0 +1,102 @@
+[
+    {
+        "question": "Define Artificial Intelligence (AI) and provide two everyday examples.",
+        "answer": "AI is the simulation of human intelligence in machines. Examples include voice assistants like Siri and recommendation systems on streaming platforms.",
+        "marks": 5
+    },
+    {
+        "question": "What is the fundamental difference between AI, Machine Learning (ML), and Deep Learning?",
+        "answer": "AI is the broad concept of intelligent machines. ML is a subset of AI that learns from data. Deep Learning is a subset of ML using neural networks with many layers.",
+        "marks": 7
+    },
+    {
+        "question": "List two ethical considerations related to AI development and deployment.",
+        "answer": "Two ethical considerations are bias in algorithms, which can lead to unfair outcomes, and privacy concerns regarding the collection and use of personal data.",
+        "marks": 5
+    },
+    {
+        "question": "Distinguish between structured and unstructured data, providing an example of each.",
+        "answer": "Structured data is organized and easily searchable (e.g., a spreadsheet of customer names and addresses). Unstructured data is not organized (e.g., an image or a free-form text document).",
+        "marks": 6
+    },
+    {
+        "question": "Briefly explain the concept of algorithms in Machine Learning.",
+        "answer": "Algorithms in ML are sets of rules or instructions that a computer follows to learn from data, make predictions, or classify information without being explicitly programmed for every task.",
+        "marks": 5
+    },
+    {
+        "question": "What is the primary difference between supervised and unsupervised learning?",
+        "answer": "Supervised learning uses labeled data to train models to predict outcomes. Unsupervised learning uses unlabeled data to find patterns and structures within the data itself.",
+        "marks": 6
+    },
+    {
+        "question": "Describe the goal of regression in Machine Learning.",
+        "answer": "Regression aims to predict a continuous numerical value. It models the relationship between independent variables and a dependent variable to forecast a specific number.",
+        "marks": 5
+    },
+    {
+        "question": "Provide a real-world example of binary classification.",
+        "answer": "A common example is email spam detection, where the model classifies an email as either 'spam' or 'not spam' (ham).",
+        "marks": 5
+    },
+    {
+        "question": "What are the basic building blocks of a neural network?",
+        "answer": "The basic building blocks are neurons, which are interconnected processing units organized into layers (input, hidden, and output layers).",
+        "marks": 5
+    },
+    {
+        "question": "What is the main purpose of Natural Language Processing (NLP)?",
+        "answer": "NLP enables machines to understand, interpret, and generate human language. Its goal is to bridge the gap between human communication and computer comprehension.",
+        "marks": 5
+    },
+    {
+        "question": "Give one application of NLP.",
+        "answer": "An application of NLP is sentiment analysis, which determines the emotional tone (positive, negative, neutral) expressed in a piece of text.",
+        "marks": 4
+    },
+    {
+        "question": "Name two industries where AI is being applied and briefly state an example for each.",
+        "answer": "Healthcare: AI can assist in diagnosing diseases from medical images. Education: AI can personalize learning paths for students.",
+        "marks": 6
+    },
+    {
+        "question": "Why is data visualization important in Machine Learning?",
+        "answer": "Data visualization helps in understanding complex data patterns, communicating model results effectively, and identifying potential issues or insights that might be missed otherwise.",
+        "marks": 5
+    },
+    {
+        "question": "What is the objective of a capstone project in an ML course?",
+        "answer": "The capstone project allows students to apply learned concepts to a real-world problem, design a mini-project, present their findings, and reflect on their learning journey.",
+        "marks": 6
+    },
+    {
+        "question": "Explain the concept of bias in AI.",
+        "answer": "Bias in AI refers to systematic errors or prejudices in an AI system's output, often stemming from biased training data or flawed algorithm design, leading to unfair or discriminatory results.",
+        "marks": 5
+    },
+    {
+        "question": "What does it mean for data to be 'cleaned' in the context of ML?",
+        "answer": "Data cleaning involves identifying and correcting or removing errors, inconsistencies, duplicates, and missing values from a dataset to ensure its accuracy and reliability for ML model training.",
+        "marks": 5
+    },
+    {
+        "question": "What is the difference between prediction and classification in ML?",
+        "answer": "Prediction (regression) forecasts a continuous numerical value, while classification assigns data points to predefined categories or classes.",
+        "marks": 5
+    },
+    {
+        "question": "What is a 'pre-trained model' in the context of image recognition?",
+        "answer": "A pre-trained model is a neural network that has already been trained on a large dataset for a specific task, like image recognition, and can be used or fine-tuned for new, similar tasks.",
+        "marks": 5
+    },
+    {
+        "question": "What is sentiment analysis in NLP?",
+        "answer": "Sentiment analysis is the process of computationally identifying and categorizing opinions expressed in a piece of text, especially to determine whether the writer's attitude towards a particular topic, product, etc., is positive, negative, or neutral.",
+        "marks": 5
+    },
+    {
+        "question": "What should a reflection on the future of AI include?",
+        "answer": "A reflection on the future of AI should consider its potential advancements, societal impacts, ongoing ethical challenges, and the evolving role of humans alongside intelligent systems.",
+        "marks": 5
+    }
+]

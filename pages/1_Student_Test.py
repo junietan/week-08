@@ -186,11 +186,11 @@ if st.session_state.current_test:
         st.markdown(f"**Total Possible Marks:** {total_marks}")
         
         # Check if Gemini is initialized
-        if 'gemini_initialized' not in st.session_state or not st.session_state.get('gemini_initialized'):
-            st.warning("⚠️ Please initialize Gemini AI from the main page first (enter API key and click Initialize).")
+        if not st.session_state.get('gemini_initialized', False):
+            st.warning("⚠️ Please initialize Gemini AI from the About AIBC landing page first (enter API key in the sidebar and click Initialize).")
             st.info("💡 Once initialized, you can use AI to automatically grade student answers.")
-        elif 'gemini_model' not in st.session_state:
-            st.error("❌ Gemini model not found in session. Please return to main page and click 'Initialize / Update Gemini'.")
+        elif not st.session_state.get('gemini_model'):
+            st.error("❌ Gemini model not found in session. Please return to the About AIBC page and click 'Initialize / Update Gemini' in the sidebar.")
         else:
             grading_mode = st.radio(
                 "Grading Method:",

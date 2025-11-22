@@ -109,7 +109,7 @@ def generate_questions(prompt: str, expected: int, total_marks: int, retries: in
     if not st.session_state.get('gemini_initialized'):
         st.error("Gemini not initialized.")
         return None
-    cfg = {"response_mime_type": "text/plain", "max_output_tokens": 900, "temperature": 0.2}
+    cfg = {"response_mime_type": "text/plain", "max_output_tokens": 8000, "temperature": 0.2}
     attempt = 0; last_raw = ""
     while attempt <= retries:
         try:
